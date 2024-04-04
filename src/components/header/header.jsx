@@ -4,7 +4,7 @@ function Header() {
     // State to manage mobile menu open/close
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     // State to manage dropdown open/close
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    //const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     return (
         <div className="w-full text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800">
@@ -23,10 +23,10 @@ function Header() {
                     </button>
                 </div>
                 <nav className={`${isMobileMenuOpen ? 'flex' : 'hidden'} flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row`}>
-                    <a className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">About</a>
-                    <a className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Contact</a>
+                    <a className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/">About</a>
+                    <a className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/">Contact</a>
                     {/* Dropdown handling logic */}
-                    <div onClick={() => setIsDropdownOpen(false)} className="relative">
+                    {/*<div onClick={() => setIsDropdownOpen(false)} className="relative">
                         <button onClick={(e) => {e.stopPropagation(); setIsDropdownOpen(!isDropdownOpen);}} className="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
                             <span>Dropdown</span>
                             <svg fill="currentColor" viewBox="0 0 20 20" className={`${isDropdownOpen ? 'rotate-180' : 'rotate-0'} inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1`}><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
@@ -40,7 +40,7 @@ function Header() {
                                 </div>
                             </div>
                         )}
-                    </div>
+                    </div>*/}
                 </nav>
             </div>
         </div>

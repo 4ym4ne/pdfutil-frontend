@@ -52,13 +52,13 @@ function FileUpload() {
     }
 
     return (
-        <div className="flex items-center justify-center p-12">
+        <div className="flex items-center justify-center p-5">
             <div className="mx-auto w-full max-w-[550px] bg-white">
                 <form className="py-6 px-9" onSubmit={handleSubmit}>
                     <div className="mb-6 pt-4">
                         <label className="mb-5 block text-xl font-semibold text-[#07074D]">Upload File</label>
                         <input type="file" name="file" id="file" className="sr-only" onChange={handleFileChange} />
-                        <label htmlFor="file" className="relative flex min-h-[200px] items-center justify-center rounded-md border border-dashed border-[#e0e0e0] p-12 text-center">
+                        <label htmlFor="file" className="relative flex min-h-[150px] items-center justify-center rounded-md border border-dashed border-[#e0e0e0] p-12 text-center">
                             <div>
                                 {selectedFile ? (
                                     <span className="block text-xl font-semibold text-[#07074D]">File selected: {selectedFile.name}</span>

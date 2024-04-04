@@ -32,8 +32,8 @@ function SuccessConfirmation({ fileId }) {
     };
 
     return (
-        <div className="flex min-h-screen items-center justify-center bg-gray-100">
-            <div className="rounded-lg bg-gray-50 px-16 py-14">
+        <div className="flex pt-10 items-center justify-center">
+            <div className="rounded-lg bg-auto px-16 py-14">
                 <div className="flex justify-center">
                     <div className="rounded-full bg-green-200 p-6">
                         <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green-500 p-4">
